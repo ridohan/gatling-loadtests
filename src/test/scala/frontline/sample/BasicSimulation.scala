@@ -24,7 +24,7 @@ class BasicSimulation extends Simulation {
       http("Page 1")
         .get("/computers?p=1")
     )
-
+fefewfewfew
   setUp(
     scn.inject(rampUsers(10) during (10 seconds))
   ).protocols(httpConf)
