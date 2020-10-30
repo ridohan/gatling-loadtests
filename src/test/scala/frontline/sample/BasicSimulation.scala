@@ -26,6 +26,7 @@ class BasicSimulation extends Simulation {
     )
  if (true) {
     doSomething
+   nimporte quoi
   }
   setUp(
     scn.inject(rampUsers(10) during (10 seconds))
