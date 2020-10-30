@@ -13,7 +13,7 @@ import scala.concurrent.duration._
 class BasicSimulation extends Simulation {
 
   val httpConf = http
-    .baseUrl("http://computer-database.gatling.io")
+    .baseUrl("http://BENCBIEN-database.gatling.io")
 
   val scn = scenario("scenario1")
     .exec(
@@ -24,7 +24,10 @@ class BasicSimulation extends Simulation {
       http("Page 1")
         .get("/computers?p=1")
     )
-
+ if (true) {
+    doSomething
+   nimporte quoi
+  }
   setUp(
     scn.inject(rampUsers(10) during (10 seconds))
   ).protocols(httpConf)
